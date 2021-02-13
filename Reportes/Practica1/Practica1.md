@@ -1,7 +1,5 @@
 #   Prueba
 
-[![asciicast](https://asciinema.org/a/TYd3NNDTY1u9KouGVSpKKVGRo.svg)](https://asciinema.org/a/TYd3NNDTY1u9KouGVSpKKVGRo)
 
 
-[![](cosa2.svg)](https://asciinema.org/a/TYd3NNDTY1u9KouGVSpKKVGRo)
-
+[![](/Reportes/Practica1/SVGs/prueba.svg)](https://asciinema.org/a/Hpr3gJaUGJmKR4cAVltVLy0Tu)
