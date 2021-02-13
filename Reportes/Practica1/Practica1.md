@@ -6,7 +6,7 @@ Sin embargo, la segunda vez todo fue bien. Aunque me sorprendió el tamaño de l
 
 Los datos de mi computadora son los siguientes:
 
-![](Graphics/PopOs.png =100x)
+![](Graphics/PopOs.png)
 
 Y tras la instalación de Debian en la máquina virtual, y su respectiva clonación tenemos:
 
