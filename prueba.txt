@@ -1,0 +1,50 @@
+Script started on 2021-02-05 13:18:33-06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;jorgealejandro@superdell-popos: ~[01;32mjorgealejandro@superdell-popos[00m:[01;34m~[00m$ su[K[Ksu
+Password: 
+su: Authentication failure
+]0;jorgealejandro@superdell-popos: ~[01;32mjorgealejandro@superdell-popos[00m:[01;34m~[00m$ sudo
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user]
+            [command]
+usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p
+            prompt] [-T timeout] [-u user] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p
+            prompt] [-T timeout] [-u user] file ...
+]0;jorgealejandro@superdell-popos: ~[01;32mjorgealejandro@superdell-popos[00m:[01;34m~[00m$ sudo apt upt[Kdate
+[sudo] password for jorgealejandro: 
+[33m0% [Working][0m            Hit:1 http://packages.microsoft.com/repos/code stable InRelease
+[33m0% [Waiting for headers] [Connecting to apt.pop-os.org (52.38.47.2)] [Connected[0m                                                                               Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
+                                                                               Get:3 http://us.archive.ubuntu.com/ubuntu focal-security InRelease [109 kB]
+                                                                               Hit:4 http://apt.pop-os.org/proprietary focal InRelease
+                                                                               Get:5 http://repository.spotify.com stable InRelease [3,316 B]
+                                                                               Hit:6 http://ppa.launchpad.net/system76/pop/ubuntu focal InRelease
+[33m                                                                               0% [3 InRelease 109 kB/109 kB 100%] [Connected to typora.io (104.24.157.12)][0m[33m                                                                            0% [Waiting for headers][0m                        Get:7 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+[33m0% [7 InRelease 1,152 B/114 kB 1%] [Waiting for headers][0m[33m                                                        0% [Waiting for headers][0m                        Hit:8 https://typora.io/linux ./ InRelease
+[33m0% [Waiting for headers][0m                        Get:9 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
+[33m0% [9 InRelease 4,048 B/101 kB 4%][0m[33m0% [9 InRelease 101 kB/101 kB 100%][0m[33m                                   0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m            Err:5 http://repository.spotify.com stable InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY D1742AD60D811D58
+[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Waiting for headers][0m                        Get:10 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [797 kB]
+[33m0% [10 Packages 2,687 B/797 kB 0%][0m[33m39% [10 Packages 243 kB/797 kB 31%][0m[33m                                   57% [Working][0m[33m57% [10 Packages store 0 B] [Waiting for headers][0m                                                 Get:11 http://us.archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [547 kB]
+[33m57% [10 Packages store 0 B] [11 Packages 1,239 B/547 kB 0%][0m[33m                                                           75% [10 Packages store 0 B] [Waiting for headers][0m                                                 Get:12 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [737 kB]
+[33m76% [10 Packages store 0 B] [12 Packages 13.3 kB/737 kB 2%][0m[33m                                                           83% [12 Packages 236 kB/737 kB 32%][0m[33m83% [11 Packages store 0 B] [12 Packages 236 kB/737 kB 32%][0m[33m                                                           100% [11 Packages store 0 B][0m[33m                            100% [Working][0m[33m100% [12 Packages store 0 B][0m[33m                            100% [Working][0m              Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 6%Reading package lists... 6%Reading package lists... 8%Reading package lists... 8%Reading package lists... 8%Reading package lists... 8%Reading package lists... 8%Reading package lists... 8%Reading package lists... 8%Reading package lists... 8%Reading package lists... 41%Reading package lists... 41%Reading package lists... 58%Reading package lists... 58%Reading package lists... 75%Reading package lists... 75%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 79%Reading package lists... 79%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 82%Reading package lists... 82%Reading package lists... 84%Reading package lists... 84%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 88%Reading package lists... 88%Reading package lists... 89%Reading package lists... 89%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... Done
+[1;33mW: [0mGPG error: http://repository.spotify.com stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY D1742AD60D811D58[0m
+[1;31mE: [0mThe repository 'http://repository.spotify.com stable InRelease' is not signed.[0m
+[33mN: [0mUpdating from such a repository can't be done securely, and is therefore disabled by default.[0m
+[33mN: [0mSee apt-secure(8) manpage for repository creation and user configuration details.[0m
+]0;jorgealejandro@superdell-popos: ~[01;32mjorgealejandro@superdell-popos[00m:[01;34m~[00m$ python
+
+Command 'python' not found, did you mean:
+
+  command 'python3' from deb python3
+  command 'python' from deb python-is-python3
+
+]0;jorgealejandro@superdell-popos: ~[01;32mjorgealejandro@superdell-popos[00m:[01;34m~[00m$ python3
+Python 3.8.5 (default, Jul 28 2020, 12:59:40) 
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+]0;jorgealejandro@superdell-popos: ~[01;32mjorgealejandro@superdell-popos[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2021-02-05 13:19:31-06:00 [COMMAND_EXIT_CODE="0"]
