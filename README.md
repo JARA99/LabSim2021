@@ -6,6 +6,8 @@ Repositorio del laboratorio de simulación de la Escuela de Ciencias Físicas y 
 
 Algunos archivos contienen animaciones de la terminal, pero estos también son enlaces a un *asciicast* del que se puede copiar y pegar código, así como también adelantar, atrasar o pausar la animación.
 
+El título del trabajo en proceso en la [bitácora](Reportes/Journal.md), también es un enlace al documento de dicho trabajo.
+
 ## Archivos importantes
 
 *   [Diario de campo](Reportes/Journal.md) o bitácora
