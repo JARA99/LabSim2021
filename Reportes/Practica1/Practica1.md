@@ -69,11 +69,19 @@ Ahora, intenté combinar otros comandos y con los primeros dos métodos todo fue
 [![](Graphics/Combi.svg)](https://asciinema.org/a/391424)
 
 
-###  Grep, ps, kill, find, du
+### grep, ps, kill, find, du
 
 Lo primero que haré será leer los manuales que estos comandos ya traen.
 Siempre es mejor aprender probando los comandos y leyendo la documentación más básica, que copiando ejemplos. Vamos a separar esta sección comando por comando:
 
-####  Grep
+#### grep
 
 Leyendo el manual `man grep`, me encontré con que *grep* es una función muy útil cuando se trata de buscar palabras en documentos grandes, ya que lo que hace es leer el documento y lo compara con alguna palabra de entrada. Tiene muchas opciones para filtrar y hacer más específica la búsqueda, solo intenté utilizar uno de ellos, para estas funciones más específicas creo que vale más la pena ir a la [documentación](https://www.gnu.org/software/grep/manual/grep.html) del paquete.
+
+[![](Graphics/Grep.svg)](https://asciinema.org/a/391434)
+
+#### ps
+
+Este comando, según su manual `man ps`, hace una lista de los procesos activos y da algunos detalles de estos. De nuevo, nos topamos con más opciones de visualización. También nos sugiere el comando `top`, para visualizar los procesos actualizados en tiempo real. Este último es el análogo al monitor del sistema.
+
+[![](Graphics/Ps.svg)](https://asciinema.org/a/391448)
