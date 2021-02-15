@@ -85,3 +85,9 @@ Leyendo el manual `man grep`, me encontré con que *grep* es una función muy ú
 Este comando, según su manual `man ps`, hace una lista de los procesos activos y da algunos detalles de estos. De nuevo, nos topamos con más opciones de visualización. También nos sugiere el comando `top`, para visualizar los procesos actualizados en tiempo real. Este último es el análogo al monitor del sistema.
 
 [![](Graphics/Ps.svg)](https://asciinema.org/a/391448)
+
+Encontré esta [documentación](https://frameworks.readthedocs.io/en/latest/linux/LinuxPs.html), no estoy seguro que sea la oficial, sin embargo me parece bastante buena, es concisa pero tiene las funciones principales de `ps`.
+
+#### kill
+
+Este comando, como su nombre lo indica, mata algún proceso que se esté realizando en la maquina y que por alguna razón alguien quiera detener. Puede ser por que está freezando la computadora en algunos casos, o por que está utilizando muchos recursos. En fin, tiene muchas utilidades. Y va de la mano con el comando `ps` o `top` para saber los procesos que se corren en ese momento. Hice una [grabación](https://asciinema.org/a/391460) que de nuevo fue muy larga, y de cualquier modo no maté ningun proceso. Voy a hacer otra grabación pero esta vez trataré de correr algún proceso para poder matarlo.
