@@ -90,4 +90,18 @@ Encontré esta [documentación](https://frameworks.readthedocs.io/en/latest/linu
 
 #### kill
 
-Este comando, como su nombre lo indica, mata algún proceso que se esté realizando en la maquina y que por alguna razón alguien quiera detener. Puede ser por que está freezando la computadora en algunos casos, o por que está utilizando muchos recursos. En fin, tiene muchas utilidades. Y va de la mano con el comando `ps` o `top` para saber los procesos que se corren en ese momento. Hice una [grabación](https://asciinema.org/a/391460) que de nuevo fue muy larga, y de cualquier modo no maté ningun proceso. Voy a hacer otra grabación pero esta vez trataré de correr algún proceso para poder matarlo.
+Este comando, como su nombre lo indica, mata algún proceso que se esté realizando en la maquina y que por alguna razón alguien quiera detener. Puede ser por que está freezando la computadora en algunos casos, o por que está utilizando muchos recursos. En fin, tiene muchas utilidades. Y va de la mano con el comando `ps` o `top` para saber los procesos que se corren en ese momento. Hice una [grabación](https://asciinema.org/a/391460) que de nuevo fue muy larga, y de cualquier modo no maté ningún proceso. Voy a hacer otra grabación pero esta vez trataré de correr algún proceso para poder matarlo.
+
+[![](Graphics/kill.svg)](https://asciinema.org/a/391462)
+
+#### find
+ Como su nombre lo indica, sirve para encontrar directorios, pero contrario a lo que uno pensaría, aquí uno coloca el nombre de la carpeta madre en la que está buscando el directorio después del comando `find`. Por ejemplo `find home` enlista todo el árbol de `home` para que uno pueda leer los directorios en el y así buscar dentro.
+
+ [![](Graphics/Find.svg)](https://asciinema.org/a/391497)
+
+ #### du
+    
+Este comando hace una investigación recursiva sobre un directorio, sobre el espacio que utiliza en el disco este directorio. A lo que se refiere con recursiva, es a que entra en cada subdirectorio del directorio y mide el espacio, y recursivamente hasta completar todo el árbol.
+
+Intenté esto con el directorio de pruebas y luego con el directorio de `/usr`, este me dio el tamaño de todo el directorio como también el tamaño de cada subdirectorio. Lamentablemente la salida es muy grande y de nuevo no pude transcribir todo al SVG. Pero aquí un enlace al [**asciicast**](https://asciinema.org/a/391497).
+
