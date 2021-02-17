@@ -105,3 +105,45 @@ Este comando hace una investigación recursiva sobre un directorio, sobre el esp
 
 Intenté esto con el directorio de pruebas y luego con el directorio de `/usr`, este me dio el tamaño de todo el directorio como también el tamaño de cada subdirectorio. Lamentablemente la salida es muy grande y de nuevo no pude transcribir todo al SVG. Pero aquí un enlace al [**asciicast**](https://asciinema.org/a/391497).
 
+### Package Manager
+
+Después de `-h` y `man`, el instalador de paquetes es el segundo recurso que más utilizo en Linux. El compando varía de distribución en distribución, por que aunque todos los administradores de paquetes pueden ser instalados y tienen el mismo propósito, algunos están diseñados específicamente para cada distribución. Por mi parte he utilizado `pacman`, `pamac`, `rpm`, `dnf`, `apt` y `apt-get`.
+
+Actualicemos el sistema...
+
+Pasó algo extraño, muchas cosas se actualizaron pero entre esas pidió una reinstalación del `grub`. Y pidió otras cosas también. Quedó todo grabado en este [**asciicast**](https://asciinema.org/a/391934), pero de nuevo, es muy largo para ponerlo aquí.
+
+Instalemos `sudo` utilizando `apt`:
+
+[![](Graphics/sudo.svg)](https://asciinema.org/a/391932)
+
+Agreguemos mi usuario a los sudoers:
+
+[![](Graphics/sudoers.svg)](https://asciinema.org/a/391942)
+
+Listo, ahora instalemos `vim` y `git`.
+
+De nuevo es una animación muy pesada, pero la imagen es un enlace:
+
+[![asciicast](https://asciinema.org/a/391953.svg)](https://asciinema.org/a/391953)
+
+### Matemos Linux
+
+Para la última parte grabé un video del comando `rm -rf /*` sin usar sudo, y bueno, este si se grabó, aunque se desplegó una lista muy larga y no podré transcribirlo a la animación de nuevo.
+
+[![asciicast](https://asciinema.org/a/391955.svg)](https://asciinema.org/a/391955)
+
+Bueno, ahora el momento de la verdad... Intentaré grabarlo, pero dudo que funcione la verdad.
+
+Efectivamente, no logré grabar nada. Extrañamente todo parecía funcionar. Ningún proceso se detuvo, todo terminó de ejecutarse. Incluso, pude detener la grabación después que terminó de borrar todo. Sin embargo, cuando me preguntó si la quería grabar o subir a la nube, murió, y por eso no pude grabar nada. Tengo un screenshot de las últimas líneas.
+
+![](Graphics/KillLinux.png)
+
+Este comando básicamente dice:
+
+*     `sudo`: Dale permisos de super usuario
+*     `rm -rf`: Remueve, y remueve forzadamente
+*     `/*`: Todo el directorio principal (Todo Linux xD)
+
+Por tanto, como era de esperarse, tras este comando todo dejó de funcionar. Ya que los programas y comandos no son más que códigos guardados en algún directorio, al ejecutarlos (o tratar de hacerlo al menos) no son encontrados y pues, por lo tanto, no funcionan. Ni siquiera el comando de apagar la máquina. 
+

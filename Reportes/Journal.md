@@ -11,3 +11,4 @@
 | 15-02 | 12:00 | 13:43 | Avances con la practica 1 |
 | 15-02 | 14:30 | 15:50 | Avances con la practica 1 |
 | 15-02 | 17:45 | 18:10 | Avances con la practica 1 |
+| 17-02 | 12:00 | 13:00 | Laboratorio 1 finalmente terminado. |
