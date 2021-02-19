@@ -21,7 +21,7 @@ Objetos: sopa, cuchillo, limón, agua, olla, estufa, salsa_inglesa
 
 De objetos, comprobar que existe sopa
 De objetos, seleccionar olla
-De olla, ejecutar llenar:
+De olla, ejecutar llenar con:
     De objetos, seleccionar agua
 De objetos, seleccionar estufa
 De estufa, ejecutar calentar:
@@ -44,4 +44,4 @@ De objetos, seleccionar salsa_inglesa
 De salsa_inglesa, ejecutar servir 5 en:
     De objetos, seleccionar sopa
 
-'''
+```
