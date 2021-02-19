@@ -20,31 +20,31 @@
 
 ```
 
-Objetos: sopa, cuchillo, limón, agua, olla, estufa, salsa_inglesa
+Objetos: SOPA, CUCHILLO, LIMÓN, AGUA, OLLA, ESTUFA, SALASA_INGLESA
 
-De objetos, comprobar que existe sopa
-De objetos, seleccionar olla
-De olla, ejecutar llenar con:
-    De objetos, seleccionar agua
-De objetos, seleccionar estufa
-De estufa, ejecutar calentar:
-    De objetos, seleccionar olla
+De objetos, ejecutar -> comprobar que existe SOPA
+De objetos, seleccionar OLLA
+De OLLA, ejecutar -> llenar con:
+    De objetos, seleccionar AGUA
+De objetos, seleccionar ESTUFA
+De ESTUFA, ejecutar -> calentar:
+    De objetos, seleccionar OLLA
 
-Si agua está hirviendo seguir, si no repetir línea
+Si AGUA está hirviendo seguir, si no repetir línea
 
-De objetos, seleccionar sopa
-De sopa, ejecutar abrir sopa
-De objetos, seleccionar olla
-De olla, ejecutar vaciar en:
-    De objetos, seleccionar sopa
-De objetos, seleccionar cuchillo
-De cuchillo, ejecutar partir:
-    De objetos, seleccionar limón
-De objetos, seleccionar limón
-De limón, ejecutar exprimir en:
-    De objetos, seleccionar sopa
-De objetos, seleccionar salsa_inglesa
-De salsa_inglesa, ejecutar servir 5 en:
-    De objetos, seleccionar sopa
+De objetos, seleccionar SOPA
+De SOPA, ejecutar -> abrir SOPA
+De objetos, seleccionar OLLA
+De OLLA, ejecutar -> vaciar en:
+    De objetos, seleccionar SOPA
+De objetos, seleccionar CUCHILLO
+De CUCHILLO, ejecutar -> partir:
+    De objetos, seleccionar LIMÓN
+De objetos, seleccionar LIMÓN
+De LIMÓN, ejecutar -> exprimir en:
+    De objetos, seleccionar SOPA
+De objetos, seleccionar SALASA_INGLESA
+De SALASA_INGLESA, ejecutar -> servir 5 en:
+    De objetos, seleccionar SOPA
 
 ```
