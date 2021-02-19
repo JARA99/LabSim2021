@@ -11,7 +11,10 @@
 
 ##   Diagrama de bloques
 
-![](Graphics/Sopa.svg)
+<p align="center">
+  <img src="Graphics/Sopa.svg" />
+</p>
+
 
 ##   Pseudocódigo
 
