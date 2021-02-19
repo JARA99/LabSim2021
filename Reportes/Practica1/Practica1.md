@@ -147,3 +147,7 @@ Este comando básicamente dice:
 
 Por tanto, como era de esperarse, tras este comando todo dejó de funcionar. Ya que los programas y comandos no son más que códigos guardados en algún directorio, al ejecutarlos (o tratar de hacerlo al menos) no son encontrados y pues, por lo tanto, no funcionan. Ni siquiera el comando de apagar la máquina. 
 
+**[Volver a la bitácora](../Journal.md)**
+
+**[Volver al README.md](../../README.md)**
+
