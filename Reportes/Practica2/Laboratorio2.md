@@ -63,3 +63,5 @@ El único *shortcut* que utilizaría de los que existen sería el de la terminal
 *Actualización:* Logré iniciar sesión con Budgie. Vamos a probarlo.
 
 Con tan solo un giga de ram (menos según el administrador de tareas), se freezó. Apagaré la máquina, y agregaré ram y núcleos. Pero de lo poco que vi, la interfaz es más intuitiva, aún así, los iconos se siguen viendo extremadamente mal, y las ventanas también. Supongo que Budgie no es así cuando se instala una distribución con Budgie desde el principio, asumo que para que se vea bonito hay que hacer la instalación manual de los iconos y demás.
+
+*Actualización* No se había trabado, cuando hice cambios en las dimensiones la detección del mouse se movió y por eso no detectaba donde hacía click. De cualquier manera, aumentaré la ram y continuaré mañana.
