@@ -12,3 +12,12 @@
 | 15-02 | 14:30 | 15:50 | Avances con la practica 1 |
 | 15-02 | 17:45 | 18:10 | Avances con la practica 1 |
 | 17-02 | 12:00 | 13:00 | Laboratorio 1 finalmente terminado. |
+
+
+## [Práctica 2](Practica2/Laboratorio2.md)
+
+|  Día  | Hora de <br /> inicio | Hora de <br /> cierre | Status: |
+| :----: | :-------------: | :-------------: | :------ |
+| 01-03 | 16:00 | 17:00 | Inicio la instalación de lubuntu, la suspendo por falta de tiempo (se está tardando demasiado, debe ser por que mi sistema se está corriendo desde un disco externo)|
+| 03-03 | 16:00 | 18:00 | Finalmente termina de instalar |
+| 03-03 | 18:00 | 23:00 | Pruebo Lubuntu y avanzo en la primera parte del reporte. Instalo Budgie pero no consigo que corra. |
