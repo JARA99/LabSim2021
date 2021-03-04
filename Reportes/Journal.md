@@ -20,4 +20,5 @@
 | :----: | :-------------: | :-------------: | :------ |
 | 01-03 | 16:00 | 17:00 | Inicio la instalación de lubuntu, la suspendo por falta de tiempo (se está tardando demasiado, debe ser por que mi sistema se está corriendo desde un disco externo)|
 | 03-03 | 16:00 | 18:00 | Finalmente termina de instalar |
-| 03-03 | 18:00 | 23:00 | Pruebo Lubuntu y avanzo en la primera parte del reporte. Instalo Budgie pero no consigo que corra. |
+| 03-03 | 18:00 | 22:50 | Pruebo Lubuntu y avanzo en la primera parte del reporte. Instalo Budgie pero no consigo que corra. |
+| 03-03 | 23:00 | 23:15 | Budgie corriendo, hacía falta instalar otro componente |

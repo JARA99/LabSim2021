@@ -52,3 +52,6 @@ El único *shortcut* que utilizaría de los que existen sería el de la terminal
 ### Budgie
 
 *Estado:* Aún no he podido abrir sesión ingresando desde Budgie.
+
+*Actualización* Logré iniciar sesión con Budgie. Vamos a probarlo.
+
