@@ -3,6 +3,8 @@
 
 ### Instalación de Lubuntu
 
+![](Graficas/LubInst.png)
+
 ### Documentación de los entornos de escritorio
 
 *   [KDE plasma](https://kde.org/announcements/plasma/5/5.18.0/)
@@ -49,9 +51,15 @@ El único *shortcut* que utilizaría de los que existen sería el de la terminal
 **Veredicto:** ¡Terrible! Se parece a Mint (que tampoco me gusta), pero es lo que hay, y es ligero, así que para una máquina viejita está muy bien.
 
 
+#### Imágenes
+
+![](Graficas/Lub1.png)
+![](Graficas/Lub2.png)
+
 ### Budgie
 
 *Estado:* Aún no he podido abrir sesión ingresando desde Budgie.
 
-*Actualización* Logré iniciar sesión con Budgie. Vamos a probarlo.
+*Actualización:* Logré iniciar sesión con Budgie. Vamos a probarlo.
 
+Con tan solo un giga de ram (menos según el administrador de tareas), se freezó. Apagaré la máquina, y agregaré ram y núcleos. Pero de lo poco que vi, la interfaz es más intuitiva, aún así, los iconos se siguen viendo extremadamente mal, y las ventanas también. Supongo que Budgie no es así cuando se instala una distribución con Budgie desde el principio, asumo que para que se vea bonito hay que hacer la instalación manual de los iconos y demás.
