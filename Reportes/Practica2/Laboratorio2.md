@@ -44,8 +44,11 @@ Buscando ![*shortcuts*](https://manual.lubuntu.me/stable/F/keyboard_shortcuts.ht
 
 El único *shortcut* que utilizaría de los que existen sería el de la terminal `ctrl+alt+T`. Y probablemente los cambios de escritorio `ctrl+alt+Left` y `ctrl+alt+Right`. Otros comandos útiles no los encontré, como abrir el navegador o ejecutar un comando. Y como dije antes, tampoco una opción para agregar comandos personalizados.
 
+*Update:* Acabo de encontrar un "programa" donde puedo ver los *shortcuts* y editarlos
+
 **Veredicto:** ¡Terrible! Se parece a Mint (que tampoco me gusta), pero es lo que hay, y es ligero, así que para una máquina viejita está muy bien.
 
 
 ### Budgie
 
+*Estado:* Aún no he podido abrir sesión ingresando desde Budgie.
