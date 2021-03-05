@@ -103,3 +103,8 @@ Adjunto aquí las fotos.
 ![](Graficas/killLinux2.png)
 
 ![](Graficas/killLinux3.png)
+
+
+**[Volver a la bitácora](../Journal.md)**
+
+**[Volver al README.md](../../README.md)**
