@@ -94,3 +94,12 @@ A diferencia de la última vez, esta vez no tengo idea de lo que va a pasar... A
 
 ![](Graficas/Spoken.jpg)
 
+Bueno, no pasó nada, los primeros comandos no hicieron nada por que no tenía instalado ninguno de esos paquetes, así que intenté hacer lo mismo pero esta vez usando `budgie-desktop`, pensé que allí moriría pero no. Luego ejecuté el `export PATH=/usr/bin3` pero tampoco murió.
+
+Adjunto aquí las fotos.
+
+![](Graficas/killLinux1.png)
+
+![](Graficas/killLinux2.png)
+
+![](Graficas/killLinux3.png)
