@@ -24,3 +24,4 @@
 | 03-03 | 23:00 | 23:15 | Budgie corriendo, hacía falta instalar otro componente |
 | 03-03 | 23:15 | 23:26 | Se trabó, aumentaré la ram de la VM, y mañana intentaré de nuevo |
 | 03-03 | 23:26 | 23:30 | Descubrí el error, no estaba trabada. |
+| 05-03 | 14:50 | : | Lab 2 terminado |

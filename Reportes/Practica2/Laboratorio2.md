@@ -65,3 +65,32 @@ El único *shortcut* que utilizaría de los que existen sería el de la terminal
 Con tan solo un giga de ram (menos según el administrador de tareas), se freezó. Apagaré la máquina, y agregaré ram y núcleos. Pero de lo poco que vi, la interfaz es más intuitiva, aún así, los iconos se siguen viendo extremadamente mal, y las ventanas también. Supongo que Budgie no es así cuando se instala una distribución con Budgie desde el principio, asumo que para que se vea bonito hay que hacer la instalación manual de los iconos y demás.
 
 *Actualización* No se había trabado, cuando hice cambios en las dimensiones la detección del mouse se movió y por eso no detectaba donde hacía click. De cualquier manera, aumentaré la ram y continuaré mañana.
+
+Si soy sincero... Tampoco me gustó este entorno. Es más, creo que me gustó aún menos que **LXDE**. Sospecho que es la misma distribución que es muy ligera y de alguna forma instala versiones muy feas de los entornos.
+
+El entorno no se instaló con iconos. Y encontrar el explorador de archivos fue muy difícil a pesar que ahora si tenía la barra de búsqueda. Cuando al fin lo abrí parecía Widows XP jajajaja...
+
+El editor de texto por defecto es *Abiword*, que puede no estar mal para el usuario promedio. Pero la verdad es que prefiero editores de texto plano, *Abiword* tiene herramientas de edición y demás, pero no es bueno para trabajar código o archivos que requieran no tener formatos ocultos.
+
+La terminal, de nuevo, no cambia entre distribuciones.
+
+La configuración, a pesar de estar toda en una sola aplicación con un menú (que esa es mi preferencia personal), era muy limitada, y me hicieron falta muchas más opciones para trastear.
+
+No encontré un listado con shortcuts tampoco. E intenté con los más comunes y no funcionaron. Luego busqué y hay guías pero para Ubuntu Budgie, y algo me dice que esos los agregó Ubuntu por que esta instalación no reacciona a ninguno de esos en su configuración por defecto.
+
+El instalador de software es el de Gnome, que es bastante cómodo, aunque prefiero la terminal. Pero aquí si, un punto a favor de Budgie.
+
+El inicio, pues bastante ordenado, e igual con la barra de búsqueda, así que aquí otro punto a favor.
+
+#### Imagen
+
+Solo tomé un screen, la verdad no había mucho que ver, la pantalla es pequeña, no la quise reconfigurar por que la última vez la posición del puntero se desconfiguró.
+
+![](Graficas/Bud1.png)
+
+## Matemos linux 2.0
+
+A diferencia de la última vez, esta vez no tengo idea de lo que va a pasar... Así que, no se hable más...
+
+![](Graficas/Spoken.jpg)
+
