@@ -13,6 +13,7 @@ El título del trabajo en proceso en la [bitácora](Reportes/Journal.md), tambi�
 *   [Diario de campo](Reportes/Journal.md) o bitácora
 *   [Práctica 1](Reportes/Practica1/Practica1.md)
 *   [Corto 1](Reportes/Corto1/Sopa.md)
+*   [Práctica 2](Reportes/Practica2/Laboratorio2.md)
 
 ##  Documentación externa
 
