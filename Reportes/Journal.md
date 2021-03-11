@@ -30,4 +30,5 @@
 
 |  Día  | Hora de <br /> inicio | Hora de <br /> cierre | Status: |
 | :---: | :-------------------: | :-------------------: | :------ |
-| 11-03 | 2:00 | : | Inicio, dockerfile y run |
+| 11-03 | 2:00 | 15:48 | Inicio, dockerfile y run |
+| 11-03 | 15:48 | 16:44 | Fin de la parte de Docker, sigamos |

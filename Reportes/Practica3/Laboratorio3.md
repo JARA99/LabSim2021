@@ -112,3 +112,13 @@ Bueno, no cambió mucho, solo que ahora el dockerfile ya no está, pero el docum
 
 Aún no estoy seguro de entender que rayos con Docker la verdad. Guardó los archivos, y cuando cambié el path, los archivos se movieron para allí. No se que rayos la verdad. Pero bueno, continuemos.
 
+## Script de Bash
+
+El [primer script](../../Bash/WeatherReport.sh) ya era suficientemente funcional con tres líneas de código efectivo (sin comentarios), sin embargo, agregué la impresión de unos espacios para que se viera mas limpio. La explicación está en el mismo [código](../../Bash/WeatherReport.sh) en los comentarios.
+
+Para el [segundo script](../../Bash/C_Generator.sh) me llevé algo de más tiempo, pero este lo hice durante la clase, así que ese tiempo no fue contabilizado. Estoy orgulloso del resultado final, sin embargo creo que será mas fácil crear una plantilla en VS-code con la información que ejecutar el script. De nuevo, está explicado vía comentarios (me disculpo por comentar en inglés, pero dicen que es buena práctica, además de evitar el cambio del layer del teclado para comentar.)
+
+
+**[Volver a la bitácora](../Journal.md)**
+
+**[Volver al README.md](../../README.md)**

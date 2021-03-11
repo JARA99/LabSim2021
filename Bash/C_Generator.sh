@@ -60,7 +60,25 @@ echo 'Inputs:       ' >> ./$file_name
 echo 'Outputs:      ' >> ./$file_name
 echo '*/            ' >> ./$file_name
 
-# Hacer el archivo ejecutable e ignorar el compilado de git
+echo '' >> ./$file_name
+echo '' >> ./$file_name
+
+echo '///////////////////////////////////////////////////////////////////////' >> ./$file_name
+echo '////////////////////////////// Libraries //////////////////////////////' >> ./$file_name
+# echo '///////////////////////////////////////////////////////////////////////' >> ./$file_name
+
+echo '' >> ./$file_name
+
+echo '#include <stdio.h>' >> ./$file_name
+
+echo '' >> ./$file_name
+echo '' >> ./$file_name
+
+echo '///////////////////////////////////////////////////////////////////////' >> ./$file_name
+echo '/////////////////////////// Pseudocode steps //////////////////////////' >> ./$file_name
+# echo '///////////////////////////////////////////////////////////////////////' >> ./$file_name
+
+# Make it executable, and ignore the file in git
 
 chmod +x $file_name
 echo '/Bash/'$name >> ../.gitignore
