@@ -8,6 +8,10 @@ Algunos archivos contienen animaciones de la terminal, pero estos también son e
 
 El título del trabajo en proceso en la [bitácora](Reportes/Journal.md), también es un enlace al documento de dicho trabajo.
 
+El path [`ejercicio1_docker`](Ejercicios/ejercicio1_docker/) no se encuentra en la carpeta madre, se encuentra en la carpeta de [`ejercicios`](/Ejercicios/)
+
+Si se hace un `git clone` de este repositorio, recomiendo leerlo en VS-code con alguna extensión de visualización de Markdown para que los documentos se vean bonitos.
+
 ## Archivos importantes
 
 *   [Diario de campo](Reportes/Journal.md) o bitácora
