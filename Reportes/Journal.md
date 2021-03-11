@@ -3,7 +3,7 @@
 ##  [Práctica 1](Practica1/Practica1.md)
 
 |  Día  | Hora de <br /> inicio | Hora de <br /> cierre | Status: |
-| :----: | :-------------: | :-------------: | :------ |
+| :---: | :-------------------: | :-------------------: | :------ |
 | 13-02 | 12:20 | 13:10 | Solo lectura de documentación |
 | 13-02 | 14:30 | 15:58 | Solo lectura de documentación |
 | 13-02 | 16:06 | 17:11 | Comienzo de la practica <br /> **De:** Instalación de la maquina virtual<br /> **A:** Instrucciones Básicas |
@@ -17,7 +17,7 @@
 ## [Práctica 2](Practica2/Laboratorio2.md)
 
 |  Día  | Hora de <br /> inicio | Hora de <br /> cierre | Status: |
-| :----: | :-------------: | :-------------: | :------ |
+| :---: | :-------------------: | :-------------------: | :------ |
 | 01-03 | 16:00 | 17:00 | Inicio la instalación de lubuntu, la suspendo por falta de tiempo (se está tardando demasiado, debe ser por que mi sistema se está corriendo desde un disco externo)|
 | 03-03 | 16:00 | 18:00 | Finalmente termina de instalar |
 | 03-03 | 18:00 | 22:50 | Pruebo Lubuntu y avanzo en la primera parte del reporte. Instalo Budgie pero no consigo que corra. |
@@ -25,3 +25,9 @@
 | 03-03 | 23:15 | 23:26 | Se trabó, aumentaré la ram de la VM, y mañana intentaré de nuevo |
 | 03-03 | 23:26 | 23:30 | Descubrí el error, no estaba trabada. |
 | 05-03 | 14:50 | 15:31 | Lab 2 terminado |
+
+## [Práctica 3](Practica3/Laboratorio3.md)
+
+|  Día  | Hora de <br /> inicio | Hora de <br /> cierre | Status: |
+| :---: | :-------------------: | :-------------------: | :------ |
+| 11-03 | 2:00 | : | Inicio, dockerfile y run |
