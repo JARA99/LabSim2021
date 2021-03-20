@@ -15,6 +15,7 @@ Si se hace un `git clone` de este repositorio, recomiendo leerlo en VS-code con 
 ## Archivos importantes
 
 *   [Diario de campo](Reportes/Journal.md) o bitácora
+*   [Ejercicios en C](C/README.md)
 *   [Práctica 1](Reportes/Practica1/Practica1.md)
 *   [Corto 1](Reportes/Corto1/Sopa.md)
 *   [Práctica 2](Reportes/Practica2/Laboratorio2.md)
