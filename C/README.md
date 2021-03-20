@@ -16,3 +16,5 @@
 
 *   [Rango de primos](prime_range.c): Desarrolle un programa que lea dos números enteros para generar un rango y que muestre todos los números primos en ese rango.
 
+        gcc prime_range.c  -o  prime_range && ./prime_range
+
