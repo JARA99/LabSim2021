@@ -20,6 +20,7 @@ Si se hace un `git clone` de este repositorio, recomiendo leerlo en VS-code con 
 *   [Corto 1](Reportes/Corto1/Sopa.md)
 *   [Práctica 2](Reportes/Practica2/Laboratorio2.md)
 *   [Práctica 3](Reportes/Practica3/Laboratorio3.md)
+*   [Corto 2](Reportes/Corto2/Corto2.md)
 
 ##  Documentación externa
 
