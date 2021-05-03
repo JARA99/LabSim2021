@@ -5,8 +5,8 @@
 # Exe: ./Exe.sh
 # Resume: Automatize all
 
-gcc Aceleration.c  -o  Aceleration
-gcc Grafica.c -o Grafica
+gcc Aceleration.c -lm -o  Aceleration
+gcc Grafica.c -lm -o Grafica
 
 line=$(./Grafica)
 
@@ -18,4 +18,10 @@ echo 'plot "v-t.dat" w xerrorbars t "Datos",  g(x) t "Aproximación de C", f(x) 
 echo 'set terminal qt' >> output.gp
 
 gnuplot 'output.gp'
+
+echo ''
+echo ''
+echo ''
+./Aceleration
+
 evince output.pdf
