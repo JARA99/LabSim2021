@@ -50,10 +50,10 @@ void main(){
     double v;
     // printf("ProdDSum %f y SumDProd %f \n",ProdDSum(v,t),SumDProd(v,t));
     double slope = m();
-    printf("a = %f ± %f",slope, Dm());
+    printf("a = %f ± %f\n",slope, Dm());
+    printf("v(0) = %f ± %f\n",b(slope),Db());
     v = slope*tfinal+b(slope);
     printf("\nv(15) = %f\n",v);
-    // printf("\nb = %f\n",b(slope));
     // printf("g(x) = (%f*x)+(%f)\n",slope,b(slope));
 }
 

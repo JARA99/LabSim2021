@@ -1,0 +1,152 @@
+\documentclass{beamer}
+% \usetheme[numbering = none]{metropolis}%Usemetropolistheme
+
+
+% \usepackage{xcolor}
+% \usepackage{listings}
+
+% \definecolor{mGreen}{rgb}{0,0.6,0}
+% \definecolor{mGray}{rgb}{0.5,0.5,0.5}
+% \definecolor{mPurple}{rgb}{0.58,0,0.82}
+% \definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
+
+% \lstdefinestyle{CStyle}{
+%     backgroundcolor=\color{backgroundColour},   
+%     commentstyle=\color{mGreen},
+%     keywordstyle=\color{magenta},
+%     numberstyle=\tiny\color{mGray},
+%     stringstyle=\color{mPurple},
+%     basicstyle=\footnotesize,
+%     breakatwhitespace=false,         
+%     breaklines=true,                 
+%     captionpos=b,                    
+%     keepspaces=true,                 
+%     numbers=left,                    
+%     numbersep=5pt,                  
+%     showspaces=false,                
+%     showstringspaces=false,
+%     showtabs=false,                  
+%     tabsize=2,
+%     language=C
+% }
+
+
+\title{Segundo examen parcial}
+\date{4 de mayo de 2021}
+\author{Jorge Alejandro Rodriguez Aldana}
+\institute{Escuela de Ciencias físicas y matemáticas}
+\begin{document}
+\maketitle
+\section{Problema 1}
+\begin{frame}{Planteamiento}
+Dada una tabla de datos de velocidad y tiempo de un objeto se nos pedía:
+
+ \begin{itemize}[<+- | alert@+>]
+    \item Una gráfica que comparara los valores
+    \begin{itemize}
+        \item Tabular los datos en un archivo de texto, y agregar una columna con el error de tiempo.
+        \item Plotear los datos con Gnuplot
+    \end{itemize}
+    \item Un ajuste de una recta que mejor se aproximara 
+    \begin{itemize}
+        \item Agregar una función a Gnuplot y hacerle un \textit{fit}
+        \item Programar el método de mínimos cuadrados
+    \end{itemize}
+    \item Obtener la aceleración aproximada
+    \begin{itemize}
+        \item La aceleración es igual a la pendiente estimada
+    \end{itemize}
+    \item Estimar la velocidad en $t=15s$
+    \begin{itemize}
+        \item La velocidad dependiente del tiempo está dada por la ecuación de la recta, solo hace falta valuarla en $t=15s$
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Mínimos cuadrados}
+
+    Se busca aproximar las constantes $m$ y $b$ para la ecuación de la recta $y(x)=mx+b$
+    
+    \bigskip
+
+    \onslide<2->{\alert<2>{\begin{equation}
+        m=\frac{n\sum_{k=1}^n\left(x_ky_k\right)-\sum_{k=1}^nx_k\sum_{k=1}^ny_k}{n\sum_{k=1}^nx_k^2-\left(\sum_{k=1}^nx_k\right)^2}
+    \end{equation}}}
+
+    \onslide<3->{\alert<3>{\begin{equation}
+        b=\frac{n\sum_{k=1}^ny_k-m\sum_{k=1}^nx_k}{n}
+    \end{equation}}}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Programación mínimos cuadrados}
+
+
+    % \begin{alertblock}{Main}
+    %     \begin{lstlisting}[style=CStyle]
+    %         void main(){
+    %             double slope = m();
+    %             printf("g(x) = (%f*x)+(%f)\n",slope,b(slope));
+    %         }
+    %     \end{lstlisting}
+    % \end{alertblock}
+
+    % \only<2>{\begin{alertblock}{Main}
+    %     \begin{lstlisting}[style=CStyle]
+    %         void main(){
+    %             double slope = m();
+    %             printf("g(x) = (%f*x)+(%f)\n",slope,b(slope));
+    %         }
+    %     \end{lstlisting}
+    % \end{alertblock}}
+    
+    \begin{block}{Funciones principales}
+        \begin{itemize}[<+- | alert@+>]
+            \item main(): Imprime los return de las funciones m() y b(m)
+            \item m(): Calcula y entrega la pendiente con el método de mínimos cuadrados
+            \item b(m): Calcula y entrega el desplazamiento de la recta, en otras palabras, la velocidad inicial
+        \end{itemize}
+    \end{block}
+
+
+    \begin{block}{Funciones secundarias}
+        \begin{itemize}[<+- | alert@+>]
+            \item SumDProd(a,b): Dadas dos listas de $n$ elementos, calcula el producto en i-esimo elemento de cada lista, y luego suma los productos
+            \item ProdDSum(a,b): Dadas dos listas de $n$ elementos, calcula la suma de cada lista y luego realiza el producto de estas sumas 
+            \item Sum(a): Dada una lista, realiza la suma de los elementos en esta
+        \end{itemize}
+    \end{block}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Errores}
+
+    El proceso para calcular los errores de $m$ y $b$, $\Delta m$ y $\Delta b$ respectivamente, fue uno muy similar. Se realizaron las funciones $Dm()$ y $Db()$ que realizaban el cálculo matemático.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Automatización}
+
+    Para automatizar todo el proceso programé un código simple en Bash que realiza las siguientes acciones:
+
+    \begin{itemize}[<+- | alert@+>]
+        \item Compila los archivos de C
+        \item Almacena la salida en una variable
+        \item Duplica un archivo .gp pre programado
+        \item Agrega la función de la recta a este archivo
+        \item Compila la gráfica
+        \item Imprime los valores de la aceleración y la velocidad a los 15s
+        \item Abre el pdf (válido solo para gnome)
+    \end{itemize}
+
+\end{frame}
+
+{\usebackgroundtemplate{%
+  \includegraphics[width=\paperwidth,height=\paperheight]{Graphics/jawa.png}} 
+\begin{frame}
+
+\end{frame}}
+\end{document}
