@@ -19,57 +19,75 @@ Comenzar realizando la gráfica para determinar el intervalo inicial a darle al 
 
 ##  Variables de entrada
 ```c
-double FMin          \\ Menor valor en el intervalo original
-double FMax          \\ Mayor valor en el intervalo original
+double FMin          // Menor valor en el intervalo original
+double FMax          // Mayor valor en el intervalo original
 ```
 ##  Variables de salida
 ```c
-double r            \\ Raíz del polinomio
+double r            // Raíz del polinomio
 ```
 
 ##  Otras variables
 
 ```c
-const double MinErr = 1 \\ Error mínimo admitido
-double Min              \\ Menor valor en el intervalo actual
-double Max              \\ Mayor valor en el intervalo actual
-double Med              \\ Variable para almacenar el valor medio actual entre Min y Max
-double r                \\ [r]oot Varialbe para almacenar el valor actual de la raiz
-double l                \\ [l]ast Varialbe para almacenar el valor anterior de la raiz
+const double MinErr = 1 // Error mínimo admitido
+double Min              // Menor valor en el intervalo actual
+double Max              // Mayor valor en el intervalo actual
+double Med              // Variable para almacenar el valor medio actual entre Min y Max
+double r                // [r]oot Varialbe para almacenar el valor actual de la raiz
+double l                // [l]ast Varialbe para almacenar el valor anterior de la raiz
 ```
 
-## Pseudocódigo
+##  Funciones
 
 ```c
-main():
-    Min = FMin          \\ Asigna el intervalo inicial al intervalo variable
-    Max = FMax          \\ Asigna el intervalo inicial al intervalo variable
-    l = FMin            \\ Guarda el valor anterior de la raiz en l
-    r = eval()          \\ Guarda el valor acual de la raiz en r
+void main()             // Funcion inicial
+double eval()           // Funcion que realiza las comparaciones evaluaciones
+double err()            // Funcion que calcula el error
+double f()              // Funcion que emula la funcion matematica
+```
 
-    while (err()>1)     \\ Loop para iterar mientras el error no sea menor a 1
-        l = r           \\ Guarda el valor anterior de la raiz en l
-        r = eval()      \\ Guarda el valor acual de la raiz en r
-    print(r)            \\ Imprime la raiz con error menor al 1% al usuario
+
+
+## Pseudocódigo general
+
+```
+Calcula el valor medio actual
+Revisa el error de ese valor
+Si el error es mayor a 1, repite
+```
+
+## Pseudocódigo explicito
+```c
+main():
+    Min = FMin          // Asigna el intervalo inicial al intervalo variable
+    Max = FMax          // Asigna el intervalo inicial al intervalo variable
+    l = FMin            // Guarda el valor anterior de la raiz en l
+    r = eval()          // Guarda el valor acual de la raiz en r
+
+    while (err()>1)     // Loop para iterar mientras el error no sea menor a 1
+        l = r           // Guarda el valor anterior de la raiz en l
+        r = eval()      // Guarda el valor acual de la raiz en r
+    print(r)            // Imprime la raiz con error menor al 1% al usuario
 ```
 
 ```c
 eval():
-    Med = (Min+Max)/2       \\ Evalua el valor medio entre Min y Max actual
-    if (f(Med)*f(Min) > 0)  \\ Compara el signo
-        Min = Med           \\ Remplaza el minimo si tiene el mismo signo
+    Med = (Min+Max)/2       // Evalua el valor medio entre Min y Max actual
+    if (f(Med)*f(Min) > 0)  // Compara el signo
+        Min = Med           // Remplaza el minimo si tiene el mismo signo
     else
-        Max = Med           \\ Remplaza el maximo si tiene l mismo signo
+        Max = Med           // Remplaza el maximo si tiene l mismo signo
     
-    return Med
+    return Med              // Regresa el valor medio actual
 ```
 
 ```c
 err():
-    return (r-l)*100/r     \\ Regresa el valor del error actual
+    return (r-l)*100/r     // Regresa el valor del error actual
 ```
 
 ```c
 f(x):
-    return exp(-x^2/2)−0.5  \\ Regresa el valor de la funcion evaluada en x
+    return exp(-x^2/2)−0.5  // Regresa el valor de la funcion evaluada en x
 ```
