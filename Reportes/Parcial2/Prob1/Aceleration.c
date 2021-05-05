@@ -23,41 +23,37 @@ Outputs:
 ///////////////////////////////////////////////////////////////////////
 ////////////////////////////// Variables //////////////////////////////
 
-int n = 6;
-double v[] = {1,3,8,11,14,18};
-double t[] = {2.1,3.0,5.2,7.1,9.2,10.1};
-double err = 0.1;
+int n = 6;                                      // Cantidad de elementos en las listas
+double v[] = {1,3,8,11,14,18};                  // Lista de velocidades
+double t[] = {2.1,3.0,5.2,7.1,9.2,10.1};        // Lista de tiempos
+double err = 0.1;                               // Error de la medicion de t
 
-int replace = 10;
-
-double tfinal = 15;
+double tfinal = 15;                             // Tiempo en el que se desea conocer la velocidad
 
 ///////////////////////////////////////////////////////////////////////
 ////////////////////////////// Functions //////////////////////////////
 
 double ProdDSum(double a[], double b[]); // Funcion que suma los elementos de dos lists y los multiplica
 double SumDProd(double a[], double b[]); // Funcion que multiplica elemento a elemento de dos listas y suma los productos
-double Sum(double a[]);
-double m();
-double b(double m);
-double Dm();
-double Db();
+double Sum(double a[]);                  // Funcion que suma los elementos en una lista
+double m();                              // Funcion que calcula la pendiente
+double b(double m);                      // Funcion que calcula el corrimiento
+double Dm();                             // Funcion que calcula el error de m
+double Db();                             // Funcion que calcula el error de b
 
 ///////////////////////////////////////////////////////////////////////
 ////////////////////////////// Main //////////////////////////////
 
 void main(){
     double v;
-    // printf("ProdDSum %f y SumDProd %f \n",ProdDSum(v,t),SumDProd(v,t));
     double slope = m();
-    printf("a = %f ± %f\n",slope, Dm());
-    printf("v(0) = %f ± %f\n",b(slope),Db());
-    v = slope*tfinal+b(slope);
-    printf("\nv(15) = %f\n",v);
-    // printf("g(x) = (%f*x)+(%f)\n",slope,b(slope));
+    printf("a = %f ± %f\n",slope, Dm());            // Imprime la pendiente con su error
+    printf("v(0) = %f ± %f\n",b(slope),Db());       // Imprime el corrimiento con su error
+    v = slope*tfinal+b(slope);                      // Calcula la velocidad en t_final
+    printf("\nv(15) = %f\n",v);                     // Imprime la velocidad en t_final
 }
 
-double ProdDSum(double a[], double b[]){
+double ProdDSum(double a[], double b[]){            // Multiplica la suma de dos listas    
     double SumA = 0;
     double SumB = 0;
     double r;
@@ -72,7 +68,7 @@ double ProdDSum(double a[], double b[]){
     return r;
 }
 
-double SumDProd(double a[], double b[]){
+double SumDProd(double a[], double b[]){            // Suma productos de elemento a elemento en dos listas
     double r = 0;
     
     for (int i = 0; i < n; i++)
@@ -82,7 +78,7 @@ double SumDProd(double a[], double b[]){
     return r;
 }
 
-double Sum(double a[]){
+double Sum(double a[]){                             // Suma los elementos en una lista
     double r = 0;
     for (int i = 0; i < n; i++)
     {
@@ -91,25 +87,25 @@ double Sum(double a[]){
     return r;
 }
 
-double m(){
+double m(){                                         // Calcula la pendiente con la formula de minimos cuadrados
     double r;
     r = (n*SumDProd(v,t)-ProdDSum(v,t))/(n*SumDProd(t,t)-ProdDSum(t,t));
     return r;
 }
 
-double b(double m){
+double b(double m){                                 // Calcula el desplazamiento de la grafica con la formula de minimos cuadrados.
     double r;
     r = (Sum(v)-m*Sum(t))/(n);
     return r;
 }
 
-double Dm(){
+double Dm(){                                         // Calcula el error de la pendiente con la formula de minimos cuadrados
     double r;
     r = (sqrt(n)*err)/(sqrt(n*SumDProd(t,t)-ProdDSum(t,t)));
     return r;
 }
 
-double Db(){
+double Db(){                                 // Calcula el error del desplazamiento de la grafica con la formula de minimos cuadrados.
     double r;
     r = err/sqrt(n);
     return r;

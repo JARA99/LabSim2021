@@ -25,34 +25,30 @@ Outputs:
 ///////////////////////////////////////////////////////////////////////
 ////////////////////////////// Variables //////////////////////////////
 
-int n = 6;
-double v[] = {1,3,8,11,14,18};
-double t[] = {2.1,3.0,5.2,7.1,9.2,10.1};
-
-int replace = 10;
+int n = 6;                                      // Cantidad de elementos en las listas
+double v[] = {1,3,8,11,14,18};                  // Lista de velocidades
+double t[] = {2.1,3.0,5.2,7.1,9.2,10.1};        // Lista de tiempos
+                     
 
 ///////////////////////////////////////////////////////////////////////
 ////////////////////////////// Functions //////////////////////////////
 
 double ProdDSum(double a[], double b[]); // Funcion que suma los elementos de dos lists y los multiplica
 double SumDProd(double a[], double b[]); // Funcion que multiplica elemento a elemento de dos listas y suma los productos
-double Sum(double a[]);
-double m();
-double b(double m);
-// void GPplot(char func[]);
+double Sum(double a[]);                  // Funcion que suma los elementos en una lista
+double m();                              // Funcion que calcula la pendiente
+double b(double m);                      // Funcion que calcula el corrimiento
+
 
 ///////////////////////////////////////////////////////////////////////
 ////////////////////////////// Main //////////////////////////////
 
-void main(){
-    // printf("ProdDSum %f y SumDProd %f \n",ProdDSum(v,t),SumDProd(v,t));
+void main(){                                        // Ejecuta las funciones m() y b() e imprime la funcion de la forma:
     double slope = m();
-    // printf("\nm = %f",slope);
-    // printf("\nb = %f\n",b(slope));
-    printf("g(x) = (%f*x)+(%f)\n",slope,b(slope));
+    printf("g(x) = (%f*x)+(%f)\n",slope,b(slope));  // g(x) = m*x+b
 }
 
-double ProdDSum(double a[], double b[]){
+double ProdDSum(double a[], double b[]){            // Multiplica la suma de dos listas
     double SumA = 0;
     double SumB = 0;
     double r;
@@ -67,7 +63,7 @@ double ProdDSum(double a[], double b[]){
     return r;
 }
 
-double SumDProd(double a[], double b[]){
+double SumDProd(double a[], double b[]){            // Suma productos de elemento a elemento en dos listas
     double r = 0;
     
     for (int i = 0; i < n; i++)
@@ -77,7 +73,7 @@ double SumDProd(double a[], double b[]){
     return r;
 }
 
-double Sum(double a[]){
+double Sum(double a[]){                             // Suma los elementos en una lista
     double r = 0;
     for (int i = 0; i < n; i++)
     {
@@ -86,62 +82,15 @@ double Sum(double a[]){
     return r;
 }
 
-double m(){
+double m(){                                         // Calcula la pendiente con la formula de minimos cuadrados
     double r;
     r = (n*SumDProd(v,t)-ProdDSum(v,t))/(n*SumDProd(t,t)-ProdDSum(t,t));
     return r;
 }
 
-double b(double m){
+double b(double m){                                 // Calcula el desplazamiento de la grafica con la formula de minimos cuadrados.
     double r;
     r = (Sum(v)-m*Sum(t))/(n);
     return r;
 }
 
-// void GPplot(char func[]){
-
-    // FILE * fOrig; // Pointer to the original file
-    // FILE * fOutp; // Pointer to the output file
-    // char path[100];
-    
-    // char buffer[BUFFER_SIZE]; //Array of chars where the string read is stored.
-    // // char newline[BUFFER_SIZE];
-    // int line, count;
-
-    // fOrig  = fopen(path, "r");
-    // fOutp = fopen("output.gp", "w"); 
-
-    // line = replace;
-    // count = 0;
-    // while ((fgets(buffer, BUFFER_SIZE, fOrig)) != NULL)
-    // {
-    //     count++;
-
-    //     /* If current line is line to replace */
-    //     if (count == line)
-    //         fputs(func, fOutp);
-    //     else
-    //         fputs(buffer, fOutp);
-    // }
-
-    // fclose(fOrig);
-    // fclose(fOutp);
-    
-    // return;
-
-    /////////////////////////////////////////////////////////////////////
-
-    // FILE * fOrig;
-    // FILE * fOutp;
-    // char buff[BUFFER_SIZE];
-
-    // fOrig = fopen("v-t.gp", "r");
-    // fOutp = fopen("output.gp", "w");
-    // fscanf(fOrig, "%s", buff);
-    // fputs("This is testing for fputs...\n", fp);
-    
-    // fprintf(fOrig, "This is testing for fprintf...\n");
-    // fputs("This is testing for fputs...\n", fOrig);
-    // fclose(fOrig);
-
-// }

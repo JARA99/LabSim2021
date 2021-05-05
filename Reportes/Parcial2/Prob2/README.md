@@ -9,6 +9,15 @@
 >   Debe de realizar la gráfica de la ecuación y comparar el resultado obtenido con el programa realizado en C.
 
 
+
+##  Documentación para el usuario
+
+En una terminal desde esta carpeta ejecutar el archivo [Exe.sh](Exe.sh):
+
+    ```
+        ./Exe.sh
+    ```
+
 ##  Metodología
 
 Para realizar este problema utilicé el método de bisección, por que, aunque se ve más hambriento de poder, también es más simple, lo que evita código más complejo, y con esto, la documentación también es más sencilla de hacer. En mi caso, no tengo problema con la potencia que va requerir para computarlo relativamente rápido.
