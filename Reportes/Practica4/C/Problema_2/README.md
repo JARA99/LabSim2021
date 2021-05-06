@@ -10,6 +10,8 @@ Correr el siguiente comando en una terminal:
 gcc Problema_1.c  -lm -o  Problema_1  && ./Problema_1
 ```
 
+Ingresar uno a uno, los cinco números en la lista que se desea ordenar.
+
 ##    Método
 
 Se realizará una función que solicite los 5 números enteros y los almacene en un vector que será una variable global. Después se programará otra función que ordene el vector, con el método de 
