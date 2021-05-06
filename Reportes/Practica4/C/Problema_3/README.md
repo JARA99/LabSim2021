@@ -53,3 +53,6 @@ int i, j;               \\ Variables locales de conteo
 ![](P3.png)
 
 ##    [Código](Problema_3.c)
+
+
+**[Volver al Laboratorio 4](../../README.md)**
