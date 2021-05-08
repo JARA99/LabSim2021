@@ -8,4 +8,6 @@ Esta documentación está diseñada para que pueda navegarse dentro de [github](
 *  [Problema_2](C/Problema_2/)
 *  [Problema_3](C/Problema_3/)
 *  [Problema_4](C/Problema_4/)
+*  [Problema_5](C/Problema_5/)
+*  [Problema_6](C/Problema_6/)
 

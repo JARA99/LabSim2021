@@ -143,7 +143,7 @@ echo '' >> ./$name/README.md
 echo '' >> ./$name/README.md
 echo '' >> ./$name/README.md
 
-echo '##    Diagrama'  >> ./$name/README.md
+echo '##    Pseudocódigo'  >> ./$name/README.md
 echo '' >> ./$name/README.md
 echo '' >> ./$name/README.md
 echo '' >> ./$name/README.md
