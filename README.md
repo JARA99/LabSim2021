@@ -22,6 +22,7 @@ Si se hace un `git clone` de este repositorio, recomiendo leerlo en VS-code con 
 *   [Práctica 3](Reportes/Practica3/Laboratorio3.md)
 *   [Corto 2](Reportes/Corto2/Corto2.md)
 *   [Parcial 2](Reportes/Parcial2/README.md)
+*   [Práctica 4](Reportes/Practica4/)
 
 ##  Documentación externa
 
