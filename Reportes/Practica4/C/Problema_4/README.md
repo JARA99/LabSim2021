@@ -58,17 +58,78 @@ double cte;           // Almacena la constante
 
 ###   Salida
 ```c
-double A[3][3];       // Almacena temporalmente la matriz A a imprimir
-double B[3][3];       // Almacena temporalmente la matriz B a imprimir
+double M[3][3];       // Almacena temporalmente la matriz a imprimir
+```
+
+### Funciones
+```c
+//Generales
+void InputMatrix(char Mat);         // Lee los elementos de matriz y los almacena
+void OutputMatrix();                // Imprime la matriz de salida
+
+//Especificas a cada problema
+void MatAxCte();                    // Multiplica cada elemento de la matriz A por una contante e imprime
+void MatSum();                      // Suma los elementos de matriz de uno en uno
+void MatDif();                      // Resta los elementos de matriz de uno en uno
+void MatProd();                     // Realiza el producto entre A y B
+void DetA();                        // Calcula el determinante de A
+void TranspB();                     // Calcula la transupesta de B
+void InvA();                        // Calcula la inversa de A
+```
+
+###   Otras variables
+```c
+int i,j;            // Variables locales de conteo
+double r;           // Variable local de almacenamiento
 ```
 
 
-###   Otras variables
-
-
-
 ##    Pseudocódigo
+```c
+main():
+    Imprime mensaje de ingresar constante
+    Lee la constante y la almacena
+    Imprime mensaje de lectura de elementos de matriz A
+    Lee elemento a elemento y almacena
+    Imprime mensaje de lectura de elementos de matriz B
+    Lee elemento a elemento y almacena
+    Calcula las funciones e imprime sus resultados
 
+MatAxCte():
+    Multiplica cada elemento de A, por la constante
+    Imprime esta nueva matriz
+
+MatSum():
+    Suma A[i][j]+B[i][j] y lo almacena en M[i][j]
+    Imprime M
+
+MatDif():
+    Resta A[i][j]-B[i][j] y lo almacena en M[i][j]
+    Imprime M
+
+MatProd():
+    M[i][j] = MatA[i][1]*MatB[1][j]+MatA[i][2]*MatB[2][j]+MatA[i][0]*MatB[0][j]
+    Imprime M
+
+DetA():
+    det = 
+        MatA[1][1]*MatA[2][2]*MatA[3][3]
+    +   MatA[2][1]*MatA[3][2]*MatA[1][3]
+    +   MatA[1][2]*MatA[2][3]*MatA[3][1]
+    -   MatA[3][1]*MatA[2][2]*MatA[1][3]
+    -   MatA[1][2]*MatA[2][1]*MatA[3][3]
+    -   MatA[1][1]*MatA[2][3]*MatA[3][2]
+    Imprime det
+
+TranspB():
+    M[i][j]=B[j][i]
+    Imprime M
+
+InvA();
+    a = 1/DetA()
+    M[i][j] = a*A[j][i]
+    Imprime M
+```
 
 
 ##    [Código](Problema_4.c)
