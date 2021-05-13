@@ -103,10 +103,10 @@ void Euler(){
     double h = h_init;
 
     //Archivo de datos
-    FILE * vel_dat;
-    FILE * pos_dat;
-    vel_dat = fopen ("v-t.dat", "w+");
-    pos_dat = fopen ("y-t.dat", "w+");
+    FILE * hv_dat;
+    // FILE * pos_dat;
+    hv_dat = fopen ("vh-t.dat", "w+");
+    // pos_dat = fopen ("y-t.dat", "w+");
     
     //Metodo de euler
     double t = t_o;
@@ -120,29 +120,29 @@ void Euler(){
         v = old_v + (slice_size*dv_dt(old_v, old_h, t));
         h = old_h + (slice_size*v);
         //Inprimir en el archivo
-        fprintf(vel_dat, "%E    %E\n", t, v);
-        fprintf(pos_dat, "%E    %E\n", t, h);
+        fprintf(hv_dat, "%E    %E  %E\n", t, v, h);
+        // fprintf(pos_dat, "%E    %E\n", t, h);
         t = t + slice_size;
     }
 
-    fclose(vel_dat);
-    fclose(pos_dat);
+    fclose(hv_dat);
+    // fclose(pos_dat);
 }
 
 void Copy(int rocket){
     switch (rocket)
     {
     case 0:
-        system("cp v-t.dat ../../DAT/v1-t.dat");
-        system("cp y-t.dat ../../DAT/y1-t.dat");
+        system("cp vh-t.dat ../../DAT/vh1-t.dat");
+        // system("cp y-t.dat ../../DAT/y1-t.dat");
         break;
     case 1:
-        system("cp v-t.dat ../../DAT/v2-t.dat");
-        system("cp y-t.dat ../../DAT/y2-t.dat");
+        system("cp vh-t.dat ../../DAT/vh2-t.dat");
+        // system("cp y-t.dat ../../DAT/y2-t.dat");
         break;
     case 2:
-        system("cp v-t.dat ../../DAT/v3-t.dat");
-        system("cp y-t.dat ../../DAT/y3-t.dat");
+        system("cp vh-t.dat ../../DAT/vh3-t.dat");
+        // system("cp y-t.dat ../../DAT/y3-t.dat");
         break;
     
     default:
@@ -184,17 +184,17 @@ double dv_dt(double v, double h, double t){
 int TestData(double t, double h, double old_h){
     if (h<old_h && h_max == 0)
     {
-        printf("La altura máxima alcanzada fue %.2Em\n", old_h);
+        printf("La altura máxima alcanzada fue              h = %.2Em\n", old_h);
         h_max = old_h;
     }
     if (m_c(t) <= M0[rocket] && t_endfuel == 0)
     {
-        printf("El combustible se acaba en el tiempo t = %.2Es\n", t);
+        printf("El combustible se acaba en el tiempo        t = %.2Es\n", t);
         t_endfuel = t;
     }
     if (h <= 0)
     {
-        printf("El cohete choca con el suelo en el tiempo t = %.2Es\n",old_h);
+        printf("El cohete choca con el suelo en el tiempo   t = %.2fmin\n", t/60.0);
         return 1;
     }
     return 0;   
@@ -218,7 +218,16 @@ double F_a(double h, double v){
 }   //Funcion de friccion viscosa
 
 double m_c(double t){
-    double r = M0[rocket]+M0_fuel[rocket]-(TSFC[rocket]*E_o[rocket]*t);
+    double r = M0_fuel[rocket]-(TSFC[rocket]*E_o[rocket]*t);
+    if (r > 0)
+    {
+        r = M0[rocket] + r;
+    }
+    else
+    {
+        r = M0[rocket];
+    }
+    
     return r;
 }   //Funcion de masa
 
