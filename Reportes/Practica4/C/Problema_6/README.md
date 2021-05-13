@@ -86,3 +86,5 @@ F(n):
 Con `f()` la función matemática del problema en cuestión.
 
 ##    [Código](Problema_6.c)
+
+**[Volver al Laboratorio 4](../../README.md)**

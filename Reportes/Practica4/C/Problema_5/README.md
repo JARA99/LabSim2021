@@ -46,3 +46,5 @@ fac(n):
 ```
 
 ##    [Código](Problema_5.c)
+
+**[Volver al Laboratorio 4](../../README.md)**
