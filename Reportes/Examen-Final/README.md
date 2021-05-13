@@ -18,3 +18,10 @@ gcc AdastraReport.c  -lm -o  AdastraReport  && ./AdastraReport
 La salida debe verse así:
 
 ![](G1.png)
+
+En este documento, en general tenemos las siguientes variables locales, con usos distintos, pero relacionados:
+
+*   `r` Resultado a retornar de una función
+*   `v` Velocidad actual o anterior
+*   `t` Tiempo actual o anterior
+*   `h` o `y`, altura actual o anterior
