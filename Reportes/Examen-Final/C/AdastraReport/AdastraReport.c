@@ -31,7 +31,7 @@ Outputs:       Rocket name, rocket features, max heigth, no fuel time, crash tim
 void Euler();     //Metodo de euler para la velocidad
 
 //ED functions
-double dv_dt();         //Ecuacion diferencial dv/dt
+double dv_dt(double y, double t);         //Ecuacion diferencial dv/dt
 
 //Algebraic functions
 double E(double t);     //Funcion E (no se me quedo que es xD)
@@ -44,17 +44,40 @@ double rho(double t);   //Funcion de densisdad
 ///////////////////////////////   Code    /////////////////////////////
 
 void main(){
-
+    Euler();
 }
 
 void Euler(){
     //Rango del metodo
     double t_o = 0;                         
-    double t_f = 100;
+    double t_f = 1;
 
     //Presicion del metodo
     double slice_size = 0.1;
     int slices = (t_f-t_o)/slices;
 
+    //Temporal store variables
+    double old_v;
+    double v = 0;
 
+    //Archivo de datos
+    FILE * vel_dat;
+    vel_dat = fopen ("v-t.dat", "w+");
+
+    double t = t_o;
+    while (t <= t_f)
+    {
+        old_v = v;
+        v = old_v + (slice_size*dv_dt(old_v, t));
+        fprintf(vel_dat, "%E    %E\n", t, v);
+        t = t + slice_size;
+    }
+
+    fclose(vel_dat);
+}
+
+
+double dv_dt(double y, double t){
+    double r = (E(t)-F_a(y)-m_c(t)*g(y))/m_c(t);
+    return r;
 }
