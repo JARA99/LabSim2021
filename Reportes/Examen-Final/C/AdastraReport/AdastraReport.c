@@ -182,9 +182,9 @@ void PrintData(int rocket){                     //Imprime los datos por cohete
     printf("Empuje del cohete:              %.2EN\n",E_o[rocket]);
     printf("Consumo específico:             %.2EKg/Ns\n",TSFC[rocket]);
     printf("Coeficiente de forma:           %.2E\n",CD[rocket]);
-    printf("Sección transversal:            %.2E\nm^2",A[rocket]);
-    printf("Masa del propulsor:             %.2E\nKg",M0[rocket]);
-    printf("Masa inicial de combustible:    %.2E\nKg",M0_fuel[rocket]);
+    printf("Sección transversal:            %.2Em^2\n",A[rocket]);
+    printf("Masa del propulsor:             %.2EKg\n",M0[rocket]);
+    printf("Masa inicial de combustible:    %.2EKg\n",M0_fuel[rocket]);
 }
 
 double dv_dt(double v, double h, double t){         //Ecuacion diferencial dv/dt = esta funcion
