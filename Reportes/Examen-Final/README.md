@@ -12,7 +12,7 @@ gcc AdastraReport.c  -lm -o  AdastraReport  && ./AdastraReport
 Para plotear, ejecutar el código dentro de la carpeta [Gnuplot](Gnuplot/):
 
 ```
-gcc AdastraReport.c  -lm -o  AdastraReport  && ./AdastraReport
+gnuplot Plots.gp
 ```
 
 La salida debe verse así:
